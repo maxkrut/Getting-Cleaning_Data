@@ -25,9 +25,7 @@ test.activity.names <- factor(test_Labels[,1], labels = labels)
 test.activity.names <- as.character(test.activity.names)
 ```
 
-`data.table` library for creating an independent tidy data set
-===============
-with the average of each variable for each activity and each subject.
+Using `data.table` library for creating an independent tidy data set with the average of each variable for each activity and each subject.
 ===============
 ```R
 dt <- data.table(Set)
