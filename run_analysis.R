@@ -1,7 +1,7 @@
-# loading library for working with final dataset
+# loading data.table library for working with final dataset
 library(data.table)
 
-# loadind features names
+# loading features names
 features_names  <- read.table("features.txt",
                    header = FALSE, stringsAsFactors = FALSE)[,2]
 
@@ -39,8 +39,6 @@ mergedSet <- merge(trainSet, testSet, all=TRUE)
 #seeking for mean() and std() columns
 ext <- c()
 j <- 0
-
-# loop
 for (i in 1:ncol(mergedSet)) {
         
 # searching "mean()" and "std()" in columns names by "grepl" function
@@ -74,14 +72,14 @@ test.activity.names <- as.character(test.activity.names)
 # new labels in "Activity" column
 Set[,"Activity"] <- c(train.activity.names,test.activity.names)
 
-# using data.table library
+# converting to data.table
 dt <- data.table(Set)
 
 # setting key to "Subject" and "Activity" columns
 keycols <- c("Subject", "Activity")
 setkeyv(dt, keycols)
 
-# group by key
+# grouping by key
 dataset <- dt[,lapply(.SD,mean),by = key(dt)]
 
 # writting final dataset
