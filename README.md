@@ -4,7 +4,7 @@ Getting and Cleaning Data Project
 Intro
 ===============
 This is a repository for the submission of the Getting and Cleaning Data course project.
-This repository hosts the R scrypt file and documentation files.
+This repository hosts the R script file and documentation files.
 
 A full description is available at the site where the data was obtained: 
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
