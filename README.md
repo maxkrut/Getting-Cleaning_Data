@@ -15,7 +15,7 @@ Running the script
 1. Set the default path of the working directory as `"getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset"`
 2. Put `run_analysis.R` in the working directory
 3. Run `run_analysis.R`
-4. The resulting cleaned `dataset.txt` will be available in the working directory
+4. The resulting clean `dataset.txt` will be available in the working directory
 
 ** this R script uses the `data.table` library. You can install it using `install.packages("data.table")` command.
 
