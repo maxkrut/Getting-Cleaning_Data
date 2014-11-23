@@ -6,8 +6,11 @@ Intro
 This is a repository for the submission of the Getting and Cleaning Data course project.
 This repository hosts the R script file and documentation files.
 
+The purpose of this project is to demonstrate ability to collect, work with, and clean a data set.
+
 A full description is available at the site where the data was obtained: 
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+The data linked to website represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
 Running the script
 ===============
