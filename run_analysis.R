@@ -1,3 +1,4 @@
+# working path - "getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset"
 # loading data.table library for working with final dataset
 library(data.table)
 
