@@ -84,5 +84,5 @@ setkeyv(dt, keycols)
 # group by key
 dataset <- dt[,lapply(.SD,mean),by = key(dt)]
 
-# writing final dataset
+# writting final dataset
 write.table(dataset, file = "dataset.txt", row.name=FALSE)
