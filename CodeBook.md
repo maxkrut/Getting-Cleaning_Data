@@ -73,14 +73,14 @@ Extracting columns
 ===============
 My script uses looping and `grepl` function to extract columns  with exact matching of `mean()` and `std()`
 ```R
-if (grepl(".*\\bmean()\\b", names(mergedSet)[i], perl=TRUE)==TRUE) {
+if (grepl(".*\\bmean()\\b", names(mergedSet)[i], perl = TRUE) == TRUE) {
                 ext[j+1] <- i
-                j=j+1 
+                j = j + 1 
         }
         
-        if (grepl(".*\\bstd()\\b", names(mergedSet)[i], perl=TRUE)==TRUE) {
+if (grepl(".*\\bstd()\\b", names(mergedSet)[i], perl = TRUE) == TRUE) {
                 ext[j+1] <- i
-                j=j+1 
+                j = j + 1 
         }        
 }
 ```
