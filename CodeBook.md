@@ -12,8 +12,9 @@ Extracting columns
 ===============
 The script uses `grepl` function to extract columns with `mean()` and `std()`
 
-`activity_labels.txt` as factors
+Naming the activities in the data set
 ===============
+`activity_labels.txt` as factors
 ```R
 labels <- factor(c(activity[,1]), labels = activity[,2])
 
