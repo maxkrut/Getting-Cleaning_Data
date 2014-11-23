@@ -2,12 +2,10 @@
 library(data.table)
 
 # loadind features names
-
 features_names  <- read.table("features.txt",
                    header = FALSE, stringsAsFactors = FALSE)[,2]
 
 # train set loading
-
 trainSet        <- read.table("train/X_train.txt",
                    header = FALSE, col.names = features_names)
 
@@ -22,7 +20,6 @@ trainSet[,562]  <- train_Labels
 trainSet[,563]  <- train_Subjects
 
 # test set loading
-
 testSet        <- read.table("test/X_test.txt",
                   header = FALSE, col.names = features_names)
 
@@ -40,15 +37,13 @@ testSet[,563]  <- test_Subjects
 mergedSet <- merge(trainSet, testSet, all=TRUE)
 
 #seeking for mean() and std() columns
-
 ext <- c()
 j <- 0
 
 # loop
 for (i in 1:ncol(mergedSet)) {
         
-        # searching "mean()" and "std()" in columns names by "grepl" function
-        
+# searching "mean()" and "std()" in columns names by "grepl" function
         if (grepl(".*\\bmean()\\b", names(mergedSet)[i], perl=TRUE)==TRUE) {
                 ext[j+1] <- i
                 j=j+1 
